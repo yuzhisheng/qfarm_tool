@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+
+<title>MHWebDesigns Panel Template</title> <!-- YOUR WEBSITE NAME -->
+
+<!-- DO NOT TOUCH THIS -->
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale: 1.0, user-scaleable=no">
+<meta property="og:image" content="http://www.mhwebdesigns.com/templates/panel/images/preview.jpg"/>
+<script src="/static/scripts/jquery-1.12.3.min.js"></script>
+<script src="/static/scripts/main.js"></script>
+ 
+</head>
+
+<!-- END -->
+
+<body>
+
+	<div id="header">
+
+	<!-- YOU CAN CHANGE THE NAME ON THE TOP LEFT OF THE TEMPLATE HERE. AFTER THE *SPAN* THE TEXT BECOMES LIGHTER. KEEP THIS SHORT. TO ADD AN IMAGE WILL REQUIRE BASIC HTML KNOWLEDGE AND CSS TO ALTER THE HEIGHT OF THE HEADER AND POSITION FIXED MARGIN OFFSET OF #CONTAINER IN STYLE.CSS. -->
+
+		<div class="logo"><a href="#">MHWD<span> Panel Template</span><span style="font-size: 0.45em;"> Version 1.0</span></a>
+		</div>
+
+		<!-- END -->
+
+	<!-- YOU CAN CHANGE THE TEXT ON THE RIGHT HAND SIDE OF THE HEADER HERE -->
+
+		<div class="powered">Template by MHWebDesigns.com</div>
+	</div>
+		<!-- END -->
+
+			<!-- HERE YOU CAN CHANGE THE MENU OPTIONS -->
+<div id="mhwebhold"></div>
+<div id="hold">
+	<a class="mobile" href="#">MENU</a></div></div>
+
+	<div id="container">
+		<div class="sidebar">
+			<ul id="nav">
+				<li><a  href="#1"> - Menu Option 1</a></li>
+				<li><a  href="#1"> - Menu Option 2</a></li>	
+				<li><a  href="#1"> - Menu Option 3</a></li>	
+				<li><a  href="#1"> - Menu Option 4</a></li>
+				<li><a  href="#1"> - Menu Option 5</a></li>
+				<li><a  href="#1"> - Menu Option 6</a></li>	
+				<li><a  href="#1"> - Menu Option 7</a></li>
+				<li><a  href="#1"> - Menu Option 8</a></li>	
+			</ul>
+			<a class="menuclose" href="#">X Close Menu</a></div></div>
+		</div>
+
+		<div class="output">
+			<h1>输出:</h1>
+			<hr style="height:5px;border:none;border-top:2px ridge green;" />
+			<p>{{stdout}}</p>
+		</div>
+			<!-- END -->
+
+		<!-- YOU CAN EDIT THE MAIN CONTENT OF THE WEBSITE HERE. IMAGES SHOULD BE THE SAME WITDH AND HEIGHT AS EACH OTHER FOR GREAT VIEWING. IMAGES TO BE NO BIGGER THAT 500PX. RECOMMENDED IMAGE SIZE IS 500PX X 281PX. -->
+
+		<div class="content">
+			{% include '%s' %content%}
+		</div>
+		
+
+
+		<!-- END -->
+
+</body>
+
+</html>
