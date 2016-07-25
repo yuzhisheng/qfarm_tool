@@ -1,14 +1,10 @@
 import flask
-import subprocess
-import time          #You don't need this. Just included it so you can see the output stream.
-import sys
 from flask import Flask, jsonify, render_template, request
+from app import app
 
-app = flask.Flask(__name__)
+PLUGIN_NAME="PUBLISH"
 
-@app.route('/')
-def index():
-    return render_template('index.html',content= "hello.html")
+
 
 @app.route('/yield')
 def proc():
@@ -24,6 +20,4 @@ def proc():
             yield line.rstrip() + '<br/>\n'
 
     return flask.Response(inner(), mimetype='text/html')  # text/html is required for most browsers to show th$
-
-app.run(debug=True, port=5000, host='0.0.0.0')
 
